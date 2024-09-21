@@ -135,7 +135,7 @@ def key_press(event):
     if key.isdigit() or key in ["+", "-", "*", "/", ".", "(", ")"]:
         button_click(key)
     elif key == "c" or key == "C":
-        button_clear_all()
+        button_clear_all() 
     elif key == "BackSpace":
         button_delete()
     elif key == "=" or key == "\r": 
