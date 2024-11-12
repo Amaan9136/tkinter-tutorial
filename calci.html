@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function Calculate() {
+      number1 = document.getElementById("num1").value
+      number2 = document.getElementById("num2").value
+      result = document.getElementById("result")
+      opt = document.getElementById("opt").value
+      result.style.display = "block"
+      switch (opt) {
+        case "+":
+        result.textContent = number1 + number2
+          break;
+        case "-":
+        result.textContent = number1 - number2
+          break;
+        case "*":
+        result.textContent = number1 * number2
+          break;
+        case "/":
+        result.textContent = number1 / number2
+          break;
+      
+        default:
+          break;
+      }
+    }
+  </script>
+  <style>
+    #result{
+      color: red;
+      background-color: aqua;
+      width: 100%;
+      text-decoration: underline;
+      font-weight: 900;
+      padding: 50px;
+      font-size: 72px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <label for="">Number 1</label>
+  <input id="num1" type="">
+  <select name="" id="opt">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <label for="">Number 2</label>
+  <input id="num2" type="">
+  <button onclick="Calculate()">Calculate</button>
+  <marquee direction="right"  id="result" ><marquee/>
+  
+</body>
+</html>
